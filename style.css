@@ -96,10 +96,6 @@ button {
   cursor: pointer;
 }
 
-.main {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%);
-}
-
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
