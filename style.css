@@ -102,10 +102,9 @@ button {
 }
 
 .header {
-  height: 1024px;
-  background-image: url(./img/bg.jpg);
-
-  background-repeat: no-repeat;
+  height: 1440px;
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
+    url(./img/bg.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -154,7 +153,6 @@ button {
   align-items: center;
   color: #ffffff;
   padding-left: 74px;
-  margin-bottom: 490px;
 }
 
 .gcatalog {
