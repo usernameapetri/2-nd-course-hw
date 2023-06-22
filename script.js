@@ -1,3 +1,5 @@
 let a = 10;
 a = 20;
-alert(a);
+
+let iphoneRelease = 2007;
+alert(iphoneRelease);
