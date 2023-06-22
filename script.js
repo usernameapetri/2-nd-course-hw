@@ -1,5 +1,6 @@
+let a = 9;
 let b = 2;
 
-let result = b ** 5;
+let result = a % b;
 
 alert(result);
