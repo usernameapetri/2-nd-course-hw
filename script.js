@@ -1,9 +1,3 @@
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
+let age = Number(prompt(`Солько вам лет ?`));
 
-alert(num);
+alert(age);
