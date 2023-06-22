@@ -9,3 +9,7 @@ user.cityofResidence = "Chisinau";
 user.age = 15;
 
 delete user.cityofResidence;
+
+let info = prompt("Какую информацию хотите узнать о пользователе?");
+
+alert(user[info]);
