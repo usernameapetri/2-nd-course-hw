@@ -1,7 +1,12 @@
 let a = 10;
-a = 20;
+let b = 2;
 
-let iphoneRelease = 2007;
+let sum = a + b;
+let difference = a - b;
+let product = a * b;
+let quotient = a / b;
 
-let founderJs = "Brendan Eich";
-alert(founderJs);
+alert(`sum is ${sum}`);
+alert(`difference is ${difference}`);
+alert(`product is ${product}`);
+alert(`quotient is ${quotient}`);
