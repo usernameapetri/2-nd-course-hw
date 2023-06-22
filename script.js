@@ -4,4 +4,5 @@ const user = {
   isAdmin: true,
 };
 
-user.cityofResidence = "Chisinau";
+user.age = 15;
+
