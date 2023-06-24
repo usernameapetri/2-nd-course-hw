@@ -106,7 +106,7 @@ button {
   color: #ffffff;
 }
 
-.header__btn {
+.btn {
   box-sizing: border-box;
   font-family: "Montserrat";
   width: 230px;
@@ -176,10 +176,46 @@ button {
   color: #ffffff;
 }
 
+.game__seasons {
+  background-color: #000915;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.gseasons {
+  grid-area: 1 / 1 / 2 / 7;
+}
+
+.game__seasons-img {
+  grid-area: 1 / 8 / 2 / 13;
+}
+
+.gseasons__heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.gseasons__text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
 @media (max-width: 376px) {
   .center {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .header {
@@ -201,12 +237,42 @@ button {
     width: 310px;
   }
 
-  .header__btn {
-    margin-left: 32px;
+  .btn {
+    margin-left: 60px;
     margin-right: 32px;
   }
 
   .gcatalog {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gseasons__heading {
+    width: 343px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .gseasons__text {
+    width: 343px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  .game__seasons {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .gseasons {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+
+  .game__seasons-img {
+    grid-area: 2 / 1 / 3 / 5;
   }
 }
