@@ -186,12 +186,30 @@ if (!isNaN(a)) {
 */
 
 //Задание 8
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
+/*
+if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   alert("«Установите версию приложения для iOS по ссылке».");
 } else {
   alert("«Установите версию приложения для Android по ссылке».");
 }
+
+*/
+
+//Задание 9
+/*
+const clientDeviceYear = 2015;
+
+if (clientDeviceYear <= 2014) {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alert("«Установите облегченную версию приложения для iOS по ссылке».");
+  } else {
+    alert("«Установите облегченную версию приложения для Android по ссылке».");
+  }
+} else {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alert("«Установите версию приложения для iOS по ссылке».");
+  } else {
+    alert("«Установите версию приложения для Android по ссылке»..");
+  }
+}
+*/
