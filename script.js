@@ -110,7 +110,7 @@ alert(Number(a) + Number(b));
 */
 
 //Задание 5
-
+/*
 let monthNumber = Number(
   prompt("Введите номер месяца и узнайко к какому сезону он принадлежит")
 );
@@ -168,3 +168,19 @@ if (monthNumber < 13 && monthNumber > 0) {
 } else {
   alert("Вы ввели не правельный номер месяца ");
 }
+*/
+
+//Задание 7
+/*
+let a = Number(prompt("Введите чисто"));
+
+if (!isNaN(a)) {
+  if (a % 2 === 0) {
+    alert("«Число четное»");
+  } else {
+    alert("«Число нечетное»");
+  }
+} else {
+  console.log(NaN);
+}
+*/
