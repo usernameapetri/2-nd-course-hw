@@ -121,6 +121,7 @@ button {
   align-items: center;
   color: #ffffff;
   padding-left: 74px;
+  cursor: url(./img/hand-line.svg), pointer;
 }
 
 .gcatalog {
@@ -135,6 +136,7 @@ button {
   height: 300px;
   border-radius: 16px;
   grid-column: span 4;
+  cursor: hand;
 }
 
 .gcatalog__game-first {
@@ -145,6 +147,14 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
+  cursor: url(./img/hand-line.svg), pointer;
+}
+.gcatalog__game-first:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(./img/bg-game1.jpg), lightgray 50% / cover no-repeat;
 }
 
 .gcatalog__game-second {
@@ -154,6 +164,15 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
+  cursor: url(./img/hand-line.svg), pointer;
+}
+
+.gcatalog__game-second:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(./img/bg-game2.jpg), lightgray 50% / cover no-repeat;
 }
 
 .gcatalog__game-third {
@@ -163,6 +182,14 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s;
+  cursor: url(./img/hand-line.svg), pointer;
+}
+.gcatalog__game-third:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(./img/bg-game3.jpg), lightgray 50% / cover no-repeat;
 }
 
 .gcatalog__text {
