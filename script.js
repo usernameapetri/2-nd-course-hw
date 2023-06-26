@@ -184,3 +184,13 @@ if (!isNaN(a)) {
   console.log(NaN);
 }
 */
+
+//Задание 8
+
+let clientOS = 0;
+
+if (clientOS === 0) {
+  alert("«Установите версию приложения для iOS по ссылке»");
+} else {
+  alert("«Установите версию приложения для Android по ссылке».");
+}
