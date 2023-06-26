@@ -186,11 +186,12 @@ if (!isNaN(a)) {
 */
 
 //Задание 8
-
-let clientOS = 0;
-
-if (clientOS === 0) {
-  alert("«Установите версию приложения для iOS по ссылке»");
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  alert("«Установите версию приложения для iOS по ссылке».");
 } else {
   alert("«Установите версию приложения для Android по ссылке».");
 }
