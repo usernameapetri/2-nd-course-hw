@@ -65,3 +65,17 @@ alert(user[info]);
 let name = prompt("Как мне к вам обращаться");
 alert(`Привет ${name} !`);
 */
+
+//hw 3
+
+//Задание 1
+
+/*let password = String("скайпро");
+let ceck = String(prompt("Введите пароль"));
+
+ceck === password
+  ? alert("Пароль введен верно")
+  : alert("Пароль введен неправильно");
+*/
+
+
