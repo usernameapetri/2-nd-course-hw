@@ -127,7 +127,6 @@ button {
 .gcatalog {
   background-color: #000915;
   padding-top: 128px;
-  padding-bottom: 128px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -142,13 +141,13 @@ button {
 .gcatalog__game-first {
   display: flex;
   align-items: end;
-
+  box-sizing: border-box;
   background-image: url(./img/bg-game1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 0.3s;
   cursor: url(./img/hand-line.svg), pointer;
+  transition: all 0.3s;
 }
 .gcatalog__game-first:hover {
   border-radius: 16px;
@@ -160,6 +159,7 @@ button {
 .gcatalog__game-second {
   display: flex;
   align-items: end;
+  box-sizing: border-box;
   background-image: url(./img/bg-game2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -178,6 +178,7 @@ button {
 .gcatalog__game-third {
   display: flex;
   align-items: end;
+  box-sizing: border-box;
   background-image: url(./img/bg-game3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,7 +204,8 @@ button {
   color: #ffffff;
 }
 
-.game__seasons {
+.game {
+  height: 800px;
   background-color: #000915;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -212,14 +214,16 @@ button {
 }
 
 .gseasons {
+  margin-top: 280px;
   grid-area: 1 / 1 / 2 / 7;
 }
 
 .game__seasons-img {
+  margin-top: 280px;
   grid-area: 1 / 8 / 2 / 13;
 }
 
-.gseasons__heading {
+.game__heading {
   font-family: Montserrat;
   font-weight: 700;
   font-style: normal;
@@ -229,14 +233,32 @@ button {
   margin-bottom: 32px;
 }
 
-.gseasons__text {
+.game__text {
   font-family: Montserrat;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   color: #ffffff;
   margin-bottom: 32px;
+}
+
+.game__words {
+  background-color: #000915;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.gwords {
+  margin-top: 280px;
+  grid-area: 1 / 8 / 2 / 13;
+}
+
+.game__words-img {
+  margin-top: 230px;
+  grid-area: 1 / 1 / 2 / 7;
 }
 
 @media (max-width: 376px) {
@@ -273,14 +295,14 @@ button {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .gseasons__heading {
+  .game__heading {
     width: 343px;
     text-align: center;
     font-size: 32px;
     line-height: 40px;
   }
 
-  .gseasons__text {
+  .game__text {
     width: 343px;
     text-align: center;
     font-size: 14px;
@@ -288,7 +310,8 @@ button {
     line-height: 22px;
   }
 
-  .game__seasons {
+  .game {
+    height: 650px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 32px;
@@ -296,10 +319,22 @@ button {
   }
 
   .gseasons {
+    margin-top: 128px;
     grid-area: 1 / 1 / 2 / 5;
   }
 
   .game__seasons-img {
     grid-area: 2 / 1 / 3 / 5;
+    margin-top: 0px;
+  }
+
+  .gwords {
+    margin-top: 0px;
+    grid-area: 1 / 1 / 2 / 5;
+  }
+
+  .game__words-img {
+    grid-area: 2 / 1 / 3 / 5;
+    margin-top: 0px;
   }
 }
