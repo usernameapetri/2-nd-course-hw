@@ -65,3 +65,151 @@ alert(user[info]);
 let name = prompt("Как мне к вам обращаться");
 alert(`Привет ${name} !`);
 */
+
+//hw 3
+
+//Задание 1
+
+/*
+let password = String("скайпро");
+let ceck = String(prompt("Введите пароль"));
+
+ceck === password
+  ? alert("Пароль введен верно")
+  : alert("Пароль введен неправильно");
+*/
+
+//Задание 2
+/*
+const c = 2;
+
+if (c > 0 && c < 10) {
+  console.log("Верно");
+} else {
+  console.log("Не верно");
+}
+*/
+
+//Задание 3
+/*
+const d = 54;
+const e = 166;
+
+if (d > 100 || e > 100) {
+  console.log("Верно");
+} else {
+  console.log("Не верно");
+}
+*/
+//Задание 4
+/*
+let a = "2";
+let b = "3";
+// Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже:
+alert(Number(a) + Number(b));
+*/
+
+//Задание 5
+/*
+let monthNumber = Number(
+  prompt("Введите номер месяца и узнайко к какому сезону он принадлежит")
+);
+
+if (monthNumber < 13 && monthNumber > 0) {
+  switch (monthNumber) {
+    case 1:
+      alert("Зима");
+
+      break;
+    case 2:
+      alert("Зима");
+
+      break;
+    case 3:
+      alert("Весна");
+
+      break;
+    case 4:
+      alert("Весна");
+
+      break;
+    case 5:
+      alert("Весна");
+
+      break;
+    case 6:
+      alert("Лето");
+
+      break;
+    case 7:
+      alert("Лето");
+
+      break;
+    case 8:
+      alert("Лето");
+
+      break;
+    case 9:
+      alert("Осень");
+
+      break;
+    case 10:
+      alert("Осень");
+
+      break;
+    case 11:
+      alert("Осень");
+
+      break;
+    case 12:
+      alert("Зима");
+      break;
+  }
+} else {
+  alert("Вы ввели не правельный номер месяца ");
+}
+*/
+
+//Задание 7
+/*
+let a = Number(prompt("Введите чисто"));
+
+if (!isNaN(a)) {
+  if (a % 2 === 0) {
+    alert("«Число четное»");
+  } else {
+    alert("«Число нечетное»");
+  }
+} else {
+  console.log(NaN);
+}
+*/
+
+//Задание 8
+/*
+if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  alert("«Установите версию приложения для iOS по ссылке».");
+} else {
+  alert("«Установите версию приложения для Android по ссылке».");
+}
+
+*/
+
+//Задание 9
+/*
+const clientDeviceYear = 2015;
+
+if (clientDeviceYear <= 2014) {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alert("«Установите облегченную версию приложения для iOS по ссылке».");
+  } else {
+    alert("«Установите облегченную версию приложения для Android по ссылке».");
+  }
+} else {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    alert("«Установите версию приложения для iOS по ссылке».");
+  } else {
+    alert("«Установите версию приложения для Android по ссылке»..");
+  }
+}
+*/

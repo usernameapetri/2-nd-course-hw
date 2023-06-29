@@ -18,12 +18,12 @@
         <h1 class="header__tittle">Добро пожаловать</h1>
         <h1 class="header__tittle">на мой сайт !</h1>
       </div>
-      <p class="header__text">
+      <p class="header__text center">
         Вам предстоит пройти несколько увлекательных игр. Если готов aнажимай
         <a class="header__link" href="#">поехали</a> и
         <a class="header__link" href="#">приступай</a>
       </p>
-      <button class="header__btn">Поехали!</button>
+      <button class="btn">Поехали!</button>
     </header>
     <section class="gcatalog center">
       <div class="gcatalog__game-first gcatalog__game">
@@ -36,6 +36,26 @@
         <p class="gcatalog__text">Игра 3</p>
       </div>
     </section>
+
+    <div class="game__seasons center">
+      <div class="gseasons">
+        <h3 class="gseasons__heading">Времена года!</h3>
+        <p class="gseasons__text">
+          Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+          к какому времени года он относится
+        </p>
+        <button class="btn">Играть!</button>
+      </div>
+      <picture class="game__seasons-img">
+        <source
+          media="(max-width: 376px )"
+          srcset="./img/gseasons-mobile.png"
+        />
+        <source media="(min-width: 377px )" srcset="./img/gseasons.png" />
+        <img src="./img/gseasons.png" alt="gseasons" />
+      </picture>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
