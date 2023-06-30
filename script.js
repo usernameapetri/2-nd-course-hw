@@ -244,6 +244,14 @@ while (a <= 5) {
 for (let i = 7; i < 23; i++) {
   console.log(i);
 }
+
+let i = 7;
+
+while (i < 23) {
+  console.log(i);
+  i++;
+} 
+
 */
 //Задание 4
 /*
@@ -261,21 +269,32 @@ for (let key in obj) {
 //Задание 5
 /*
 let num = 0;
-
-for (let n = 1000; n > 50; n /= 2) {
-  console.log(n);
+let n = 1000;
+while (50 < n) {
+  n /= 2;
   num++;
 }
+
+console.log(`число итерации ${num}`);
+
+
 
 console.log(`Число итерации ${num}`);
 */
 //Задание 6
-
 /*
-for (let a = 2; a < 30; a++) {
-  if (a === 2 || a === 9 || a === 16 || a === 23 || a === 30) {
-    console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
-  }
+for (let a = 2; a < 30; a += 7) {
+  console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
+}
+*/
+/*
+const num = parseInt(prompt("Введите число"));
+
+let summary = 0;
+
+for (let i = 0; i <= num; i++) {
+  summary += i;
 }
 
+console.log(`сумма чисел ${summary}`);
 */
