@@ -275,10 +275,6 @@ while (50 < n) {
   num++;
 }
 
-console.log(`число итерации ${num}`);
-
-
-
 console.log(`Число итерации ${num}`);
 */
 //Задание 6
@@ -286,15 +282,5 @@ console.log(`Число итерации ${num}`);
 for (let a = 2; a < 30; a += 7) {
   console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
 }
-*/
-/*
-const num = parseInt(prompt("Введите число"));
 
-let summary = 0;
-
-for (let i = 0; i <= num; i++) {
-  summary += i;
-}
-
-console.log(`сумма чисел ${summary}`);
 */
