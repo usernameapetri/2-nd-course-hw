@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Skypro 2077</title>
@@ -37,10 +37,10 @@
       </div>
     </section>
 
-    <div class="game__seasons center">
+    <div class="game center">
       <div class="gseasons">
-        <h3 class="gseasons__heading">Времена года!</h3>
-        <p class="gseasons__text">
+        <h3 class="game__heading">Времена года!</h3>
+        <p class="game__text">
           Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
           к какому времени года он относится
         </p>
@@ -53,6 +53,22 @@
         />
         <source media="(min-width: 377px )" srcset="./img/gseasons.png" />
         <img src="./img/gseasons.png" alt="gseasons" />
+      </picture>
+    </div>
+
+    <div class="game center">
+      <div class="gwords">
+        <h3 class="game__heading">Запомни слова</h3>
+        <p class="game__text">
+          При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+          необходимо запомнить.
+        </p>
+        <button class="btn">Играть</button>
+      </div>
+      <picture class="game__words-img">
+        <source media="(max-width: 376px )" srcset="./img/gwordadop.png" />
+        <source media="(min-width: 377px )" srcset="./img/gworddesc.png" />
+        <img src="./img/gwordadop.png" alt="gseasons" />
       </picture>
     </div>
 

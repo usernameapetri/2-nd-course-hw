@@ -198,18 +198,89 @@ if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 //Задание 9
 /*
 const clientDeviceYear = 2015;
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 if (clientDeviceYear <= 2014) {
-  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    alert("«Установите облегченную версию приложения для iOS по ссылке».");
+  if (isIOS) {
+    alert("Установите облегченную версию приложения для iOS по ссылке.");
   } else {
-    alert("«Установите облегченную версию приложения для Android по ссылке».");
+    alert("Установите облегченную версию приложения для Android по ссылке.");
   }
 } else {
-  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    alert("«Установите версию приложения для iOS по ссылке».");
+  if (isIOS) {
+    alert("Установите версию приложения для iOS по ссылке.");
   } else {
-    alert("«Установите версию приложения для Android по ссылке»..");
+    alert("Установите версию приложения для Android по ссылке.");
   }
 }
+*/
+
+//hw4
+
+//Задание 1
+/*
+let a = 0;
+
+while (a < 2) {
+  console.log("Привет");
+  a++;
+}
+*/
+
+//Задание 2
+
+/*
+let a = 1;
+
+while (a <= 5) {
+  console.log(a);
+  a++;
+}
+
+*/
+
+//Задание 3
+/*
+for (let i = 7; i < 23; i++) {
+  console.log(i);
+}
+
+let i = 7;
+
+while (i < 23) {
+  console.log(i);
+  i++;
+} 
+
+*/
+//Задание 4
+/*
+const obj = {
+  Коля: 200,
+  Вася: 300,
+  Петя: 400,
+};
+
+for (let key in obj) {
+  alert(`${key} -- Зарплата ${obj[key]}`);
+}
+*/
+
+//Задание 5
+/*
+let num = 0;
+let n = 1000;
+while (50 < n) {
+  n /= 2;
+  num++;
+}
+
+console.log(`Число итерации ${num}`);
+*/
+//Задание 6
+/*
+for (let a = 2; a < 30; a += 7) {
+  console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
+}
+
 */
