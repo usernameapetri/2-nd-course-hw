@@ -339,12 +339,25 @@ const printSquareNum = (a) => console.log(a ** 2);
 printSquareNum(8);
 */
 //3.2
-
+/*
 const printSquareNum = (a) => {
   return a ** 2;
 };
 
 console.log(printSquareNum(7));
+*/
 
+//Задание 4
 
+const sayHello = (age) => {
+  age = prompt("Сколько тебе лет");
+  if (age <= 0) {
+    alert("Вы ввели неправильное значение");
+  } else if (age > 0 && age <= 12) {
+    alert("Привет, друг!");
+  } else {
+    alert("Добро пожаловать!");
+  }
+};
 
+sayHello();
