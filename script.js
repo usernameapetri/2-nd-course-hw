@@ -296,17 +296,31 @@ for (let a = 2; a < 30; a += 7) {
 
 //Задание 1
 /*
-const difference = (a, b) => {
+const givMinNum = (a, b) => {
   return Math.min(a, b);
 };
 
-console.log(difference(6, 9));   
+console.log(givMinNum(6, 9));   
+
+
+// Решение через if else
+
+const givMinNum = (a, b) => {
+  if (a <= b) {
+    return a;
+  } else {
+    return b;
+  }
+};
+
+console.log(givMinNum(8, 9));
+
 
 */
 
 //Задание 2
-
-const testNum = (a) => {
+/*
+const givNumParity = (a) => {
   if (a % 2 == 0) {
     return "Число четное ";
   } else {
@@ -314,4 +328,7 @@ const testNum = (a) => {
   }
 };
 
-console.log(testNum(6));
+console.log(givNumparity(8));
+*/
+
+// Задание 3
