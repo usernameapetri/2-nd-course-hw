@@ -118,58 +118,34 @@ let monthNumber = Number(
 if (monthNumber < 13 && monthNumber > 0) {
   switch (monthNumber) {
     case 1:
-      alert("Зима");
-
-      break;
     case 2:
+    case 12:
       alert("Зима");
 
       break;
     case 3:
-      alert("Весна");
-
-      break;
     case 4:
-      alert("Весна");
-
-      break;
     case 5:
       alert("Весна");
 
       break;
     case 6:
-      alert("Лето");
-
-      break;
     case 7:
-      alert("Лето");
-
-      break;
     case 8:
       alert("Лето");
 
       break;
     case 9:
-      alert("Осень");
-
-      break;
     case 10:
-      alert("Осень");
-
-      break;
     case 11:
       alert("Осень");
 
-      break;
-    case 12:
-      alert("Зима");
       break;
   }
 } else {
   alert("Вы ввели не правельный номер месяца ");
 }
 */
-
 //Задание 7
 /*
 let a = Number(prompt("Введите чисто"));
@@ -389,7 +365,7 @@ const giveCubNum = (a) => {
 console.log(giveCubNum());
 */
 // Задание 7
-
+/*
 const getCircleArea = function () {
   const area = Math.PI * this.radius ** 2;
   return area.toFixed(2);
@@ -416,3 +392,73 @@ console.log("Периметр circle1:", circle1.getPerimeter());
 
 console.log("Площадь circle2:", circle2.getArea());
 console.log("Периметр circle2:", circle2.getPerimeter());
+*/
+
+//Задание 8
+
+//Решение 1
+
+const getSeason = (monthNumber) => {
+  if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+    return "Зима";
+  } else if (monthNumber >= 3 && monthNumber <= 5) {
+    return "Весна";
+  } else if (monthNumber >= 6 && monthNumber <= 8) {
+    return "Лето";
+  } else if (monthNumber >= 9 && monthNumber <= 11) {
+    return "Осень";
+  } else {
+    return "Неправильный номер месяца";
+  }
+};
+
+console.log(getSeason(4));
+console.log(getSeason(7));
+console.log(getSeason(10));
+console.log(getSeason(13));
+
+//Решение 2
+/*
+const gameSeasons = () => {
+  let monthNumber = Number(
+    prompt("Введите номер месяца и узнайко к какому сезону он принадлежит")
+  );
+
+  if (monthNumber < 13 && monthNumber > 0) {
+    switch (monthNumber) {
+      case 1:
+      case 2:
+      case 12:
+        alert("Зима");
+
+        break;
+      case 3:
+      case 4:
+      case 5:
+        alert("Весна");
+
+        break;
+      case 6:
+      case 7:
+      case 8:
+        alert("Лето");
+
+        break;
+      case 9:
+      case 10:
+      case 11:
+        alert("Осень");
+
+        break;
+    }
+  } else {
+    alert("Вы ввели не правельный номер месяца ");
+  }
+};
+
+console.log(getSeason(4));
+console.log(getSeason(7));
+console.log(getSeason(10));
+console.log(getSeason(13));
+
+*/
