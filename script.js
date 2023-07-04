@@ -295,9 +295,23 @@ for (let a = 2; a < 30; a += 7) {
 //hw5
 
 //Задание 1
-
+/*
 const difference = (a, b) => {
   return Math.min(a, b);
 };
 
 console.log(difference(6, 9));   
+
+*/
+
+//Задание 2
+
+const testNum = (a) => {
+  if (a % 2 == 0) {
+    return "Число четное ";
+  } else {
+    return "Число нечетное ";
+  }
+};
+
+console.log(testNum(6));
