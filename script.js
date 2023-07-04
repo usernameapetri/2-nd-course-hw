@@ -363,7 +363,7 @@ sayHello(8);
 */
 
 //Задание 5
-
+/*
 const sumOfNum = (a, b) => {
   if (isNaN(a) || isNaN(b)) {
     return "Одно или оба значения не являются числом";
@@ -373,3 +373,17 @@ const sumOfNum = (a, b) => {
 };
 
 console.log(sumOfNum(8, 9));
+*/
+
+// Задание 6
+
+const giveCubNum = (a) => {
+  a = prompt("Введите число");
+  if (!isNaN(a)) {
+    return `${a} В кубе равравняется ${a ** 3}`;
+  } else {
+    return "Переданный параметр не является числом";
+  }
+};
+
+console.log(giveCubNum());
