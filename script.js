@@ -348,8 +348,8 @@ console.log(printSquareNum(7));
 */
 
 //Задание 4
-
-const sayHello = (age) => {
+/*
+const sayHello = () => {
   age = prompt("Сколько тебе лет");
   if (age <= 0) {
     alert("Вы ввели неправильное значение");
@@ -359,5 +359,17 @@ const sayHello = (age) => {
     alert("Добро пожаловать!");
   }
 };
+sayHello(8);
+*/
 
-sayHello();
+//Задание 5
+
+const sumOfNum = (a, b) => {
+  if (isNaN(a) || isNaN(b)) {
+    return "Одно или оба значения не являются числом";
+  } else {
+    return a * b;
+  }
+};
+
+console.log(sumOfNum(8, 9));
