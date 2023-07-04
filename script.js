@@ -187,16 +187,24 @@ if (!isNaN(a)) {
 
 //Задание 8
 /*
+let isIOS = 1;
+
+if ((isIOS = 1)) {
+  alert("Установите версию приложения для iOS по ссылке.");
+} else {
+  alert("«Установите версию приложения для Android по ссылке».");
+}
+/*
 if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   alert("«Установите версию приложения для iOS по ссылке».");
 } else {
   alert("«Установите версию приложения для Android по ссылке».");
 }
 
-*/
+
 
 //Задание 9
-/*
+
 const clientDeviceYear = 2015;
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
@@ -213,7 +221,7 @@ if (clientDeviceYear <= 2014) {
     alert("Установите версию приложения для Android по ссылке.");
   }
 }
-*/
+
 
 //hw4
 
@@ -282,5 +290,14 @@ console.log(`Число итерации ${num}`);
 for (let a = 2; a < 30; a += 7) {
   console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
 }
-
 */
+
+//hw5
+
+//Задание 1
+
+const difference = (a, b) => {
+  return Math.min(a, b);
+};
+
+console.log(difference(6, 9));   
