@@ -376,7 +376,7 @@ console.log(sumOfNum(8, 9));
 */
 
 // Задание 6
-
+/*
 const giveCubNum = (a) => {
   a = prompt("Введите число");
   if (!isNaN(a)) {
@@ -387,3 +387,32 @@ const giveCubNum = (a) => {
 };
 
 console.log(giveCubNum());
+*/
+// Задание 7
+
+const getCircleArea = function () {
+  const area = Math.PI * this.radius ** 2;
+  return area.toFixed(2);
+};
+
+const getCirclePerimeter = function () {
+  const perimeter = 2 * Math.PI * this.radius;
+  return perimeter;
+};
+const circle1 = {
+  radius: 6,
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+};
+
+const circle2 = {
+  radius: 9,
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+};
+
+console.log("Площадь circle1:", circle1.getArea());
+console.log("Периметр circle1:", circle1.getPerimeter());
+
+console.log("Площадь circle2:", circle2.getArea());
+console.log("Периметр circle2:", circle2.getPerimeter());
