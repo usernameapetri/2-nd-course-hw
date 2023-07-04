@@ -332,3 +332,19 @@ console.log(givNumparity(8));
 */
 
 // Задание 3
+
+//3.1
+/*
+const printSquareNum = (a) => console.log(a ** 2);
+printSquareNum(8);
+*/
+//3.2
+
+const printSquareNum = (a) => {
+  return a ** 2;
+};
+
+console.log(printSquareNum(7));
+
+
+
