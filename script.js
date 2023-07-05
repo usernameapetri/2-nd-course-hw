@@ -118,58 +118,34 @@ let monthNumber = Number(
 if (monthNumber < 13 && monthNumber > 0) {
   switch (monthNumber) {
     case 1:
-      alert("Зима");
-
-      break;
     case 2:
+    case 12:
       alert("Зима");
 
       break;
     case 3:
-      alert("Весна");
-
-      break;
     case 4:
-      alert("Весна");
-
-      break;
     case 5:
       alert("Весна");
 
       break;
     case 6:
-      alert("Лето");
-
-      break;
     case 7:
-      alert("Лето");
-
-      break;
     case 8:
       alert("Лето");
 
       break;
     case 9:
-      alert("Осень");
-
-      break;
     case 10:
-      alert("Осень");
-
-      break;
     case 11:
       alert("Осень");
 
-      break;
-    case 12:
-      alert("Зима");
       break;
   }
 } else {
   alert("Вы ввели не правельный номер месяца ");
 }
 */
-
 //Задание 7
 /*
 let a = Number(prompt("Введите чисто"));
@@ -187,16 +163,24 @@ if (!isNaN(a)) {
 
 //Задание 8
 /*
+let isIOS = 1;
+
+if ((isIOS = 1)) {
+  alert("Установите версию приложения для iOS по ссылке.");
+} else {
+  alert("«Установите версию приложения для Android по ссылке».");
+}
+/*
 if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   alert("«Установите версию приложения для iOS по ссылке».");
 } else {
   alert("«Установите версию приложения для Android по ссылке».");
 }
 
-*/
+
 
 //Задание 9
-/*
+
 const clientDeviceYear = 2015;
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
@@ -213,7 +197,7 @@ if (clientDeviceYear <= 2014) {
     alert("Установите версию приложения для Android по ссылке.");
   }
 }
-*/
+
 
 //hw4
 
@@ -282,5 +266,199 @@ console.log(`Число итерации ${num}`);
 for (let a = 2; a < 30; a += 7) {
   console.log(`Сегодня пятница число ${a} Необходимо подготовить отчет.`);
 }
+*/
+
+//hw5
+
+//Задание 1
+/*
+const givMinNum = (a, b) => {
+  return Math.min(a, b);
+};
+
+console.log(givMinNum(6, 9));   
+
+
+// Решение через if else
+
+const givMinNum = (a, b) => {
+  if (a <= b) {
+    return a;
+  } else {
+    return b;
+  }
+};
+
+console.log(givMinNum(8, 9));
+
+
+*/
+
+//Задание 2
+/*
+const givNumParity = (a) => {
+  if (a % 2 == 0) {
+    return "Число четное ";
+  } else {
+    return "Число нечетное ";
+  }
+};
+
+console.log(givNumparity(8));
+*/
+
+// Задание 3
+
+//3.1
+/*
+const printSquareNum = (a) => console.log(a ** 2);
+printSquareNum(8);
+*/
+//3.2
+/*
+const printSquareNum = (a) => {
+  return a ** 2;
+};
+
+console.log(printSquareNum(7));
+*/
+
+//Задание 4
+/*
+const sayHello = () => {
+  age = prompt("Сколько тебе лет");
+  if (age <= 0) {
+    alert("Вы ввели неправильное значение");
+  } else if (age > 0 && age <= 12) {
+    alert("Привет, друг!");
+  } else {
+    alert("Добро пожаловать!");
+  }
+};
+sayHello(8);
+*/
+
+//Задание 5
+/*
+const sumOfNum = (a, b) => {
+  if (isNaN(a) || isNaN(b)) {
+    return "Одно или оба значения не являются числом";
+  } else {
+    return a * b;
+  }
+};
+
+console.log(sumOfNum(8, 9));
+*/
+
+// Задание 6
+/*
+const giveCubNum = (a) => {
+  a = prompt("Введите число");
+  if (!isNaN(a)) {
+    return `${a} В кубе равравняется ${a ** 3}`;
+  } else {
+    return "Переданный параметр не является числом";
+  }
+};
+
+console.log(giveCubNum());
+*/
+// Задание 7
+/*
+const getCircleArea = function () {
+  const area = Math.PI * this.radius ** 2;
+  return area.toFixed(2);
+};
+
+const getCirclePerimeter = function () {
+  const perimeter = 2 * Math.PI * this.radius;
+  return perimeter;
+};
+const circle1 = {
+  radius: 6,
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+};
+
+const circle2 = {
+  radius: 9,
+  getArea: getCircleArea,
+  getPerimeter: getCirclePerimeter,
+};
+
+console.log("Площадь circle1:", circle1.getArea());
+console.log("Периметр circle1:", circle1.getPerimeter());
+
+console.log("Площадь circle2:", circle2.getArea());
+console.log("Периметр circle2:", circle2.getPerimeter());
+*/
+
+//Задание 8
+
+//Решение 1
+/*
+const getSeason = (monthNumber) => {
+  if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+    return "Зима";
+  } else if (monthNumber >= 3 && monthNumber <= 5) {
+    return "Весна";
+  } else if (monthNumber >= 6 && monthNumber <= 8) {
+    return "Лето";
+  } else if (monthNumber >= 9 && monthNumber <= 11) {
+    return "Осень";
+  } else {
+    return "Неправильный номер месяца";
+  }
+};
+
+console.log(getSeason(4));
+console.log(getSeason(7));
+console.log(getSeason(10));
+console.log(getSeason(13));
+*/
+//Решение 2
+/*
+const gameSeasons = () => {
+  let monthNumber = Number(
+    prompt("Введите номер месяца и узнайко к какому сезону он принадлежит")
+  );
+
+  if (monthNumber < 13 && monthNumber > 0) {
+    switch (monthNumber) {
+      case 1:
+      case 2:
+      case 12:
+        alert("Зима");
+
+        break;
+      case 3:
+      case 4:
+      case 5:
+        alert("Весна");
+
+        break;
+      case 6:
+      case 7:
+      case 8:
+        alert("Лето");
+
+        break;
+      case 9:
+      case 10:
+      case 11:
+        alert("Осень");
+
+        break;
+    }
+  } else {
+    alert("Вы ввели не правельный номер месяца ");
+  }
+};
+
+console.log(getSeason(4));
+console.log(getSeason(7));
+console.log(getSeason(10));
+console.log(getSeason(13));
 
 */
