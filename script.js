@@ -397,7 +397,7 @@ console.log("Периметр circle2:", circle2.getPerimeter());
 //Задание 8
 
 //Решение 1
-
+/*
 const getSeason = (monthNumber) => {
   if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
     return "Зима";
@@ -416,7 +416,7 @@ console.log(getSeason(4));
 console.log(getSeason(7));
 console.log(getSeason(10));
 console.log(getSeason(13));
-
+*/
 //Решение 2
 /*
 const gameSeasons = () => {

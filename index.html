@@ -44,7 +44,9 @@
           Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
           к какому времени года он относится
         </p>
-        <button class="btn" onclick="gameSeasons()">Играть!</button>
+        <button class="btn" onclick="getSeason(prompt('Введите число'))">
+          Играть!
+        </button>
       </div>
       <picture class="game__seasons-img">
         <source
@@ -72,6 +74,7 @@
       </picture>
     </div>
 
+    <script src="./game.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
