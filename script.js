@@ -467,9 +467,15 @@ for (let i = 0; i < arr.length; i++) {
 }
 */
 //Задание 2
-
+/*
 const arr = [1, 5, 4, 10, 0, 3];
 const findIndex = arr.indexOf(4);
 console.log(findIndex);
+*/
+//Задание 3
+
+const arr = [1, 3, 5, 10, 20];
+const joinArr = arr.join(" ");
+console.log(joinArr);
 
 
