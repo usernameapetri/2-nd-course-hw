@@ -473,9 +473,27 @@ const findIndex = arr.indexOf(4);
 console.log(findIndex);
 */
 //Задание 3
-
+/*
 const arr = [1, 3, 5, 10, 20];
 const joinArr = arr.join(" ");
 console.log(joinArr);
+*/
+//Задание 4
+
+const multiArray = [];
+
+for (let i = 0; i < 3; i++) {
+  const innerArray = [];
+
+  for (let j = 0; j < 3; j++) {
+    innerArray.push(1);
+  }
+
+  multiArray.push(innerArray);
+}
+
+console.log(multiArray);
+
+
 
 
