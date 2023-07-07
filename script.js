@@ -501,3 +501,15 @@ const arr = [1, 1, 1];
 arr.push(2, 2, 2);
 console.log(arr);
 */
+
+//Задание 6
+
+const arr = [9, 8, 7, "a", 6, 5];
+
+arr.sort();
+
+arr.pop();
+
+console.log(arr);
+
+
