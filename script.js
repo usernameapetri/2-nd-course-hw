@@ -503,7 +503,7 @@ console.log(arr);
 */
 
 //Задание 6
-
+/*
 const arr = [9, 8, 7, "a", 6, 5];
 
 arr.sort();
@@ -511,5 +511,17 @@ arr.sort();
 arr.pop();
 
 console.log(arr);
+*/
 
+//Задание 7
+/*
+let arr = [9, 8, 7, 6, 5];
 
+let n = Number(prompt("Введите число"));
+
+if (arr.includes(n)) {
+  alert("Вы угадали");
+} else {
+  alert("Вы не угадали");
+}
+*/
