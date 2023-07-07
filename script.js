@@ -525,3 +525,17 @@ if (arr.includes(n)) {
   alert("Вы не угадали");
 }
 */
+
+//Задание 8
+
+let string = "abcdef";
+
+let arr = string.split("");
+
+arr.reverse();
+
+arr = arr.join("");
+
+console.log(arr);
+
+
