@@ -348,9 +348,8 @@ const sumOfNum = (a, b) => {
   }
 };
 
-console.log(sumOfNum(8, 9));
+console.log(sumOfNum());
 */
-
 // Задание 6
 /*
 const giveCubNum = (a) => {
@@ -373,7 +372,7 @@ const getCircleArea = function () {
 
 const getCirclePerimeter = function () {
   const perimeter = 2 * Math.PI * this.radius;
-  return perimeter;
+  return perimeter.toFixed(2);
 };
 const circle1 = {
   radius: 6,
@@ -393,7 +392,6 @@ console.log("Периметр circle1:", circle1.getPerimeter());
 console.log("Площадь circle2:", circle2.getArea());
 console.log("Периметр circle2:", circle2.getPerimeter());
 */
-
 //Задание 8
 
 //Решение 1
@@ -455,10 +453,16 @@ const gameSeasons = () => {
     alert("Вы ввели не правельный номер месяца ");
   }
 };
-
-console.log(getSeason(4));
-console.log(getSeason(7));
-console.log(getSeason(10));
-console.log(getSeason(13));
-
 */
+
+//hw6
+
+//Задание 1
+
+const arr = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+  if (arr[i] == 10) break;
+}
+
