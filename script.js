@@ -479,7 +479,7 @@ const joinArr = arr.join(" ");
 console.log(joinArr);
 */
 //Задание 4
-
+/*
 const multiArray = [];
 
 for (let i = 0; i < 3; i++) {
@@ -493,7 +493,11 @@ for (let i = 0; i < 3; i++) {
 }
 
 console.log(multiArray);
+*/
 
-
-
-
+//Задание 5
+/*
+const arr = [1, 1, 1];
+arr.push(2, 2, 2);
+console.log(arr);
+*/
