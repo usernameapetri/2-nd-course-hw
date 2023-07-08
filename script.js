@@ -527,7 +527,7 @@ if (arr.includes(n)) {
 */
 
 //Задание 8
-
+/*
 let string = "abcdef";
 
 let arr = string.split("");
@@ -537,5 +537,31 @@ arr.reverse();
 arr = arr.join("");
 
 console.log(arr);
+*/
+
+//Задание 9
+/*
+const bigArr = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+
+const arr = bigArr.flat();
+
+console.log(arr);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
