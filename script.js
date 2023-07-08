@@ -551,17 +551,14 @@ const arr = bigArr.flat();
 console.log(arr);
 */
 
+//Задание 10
 
+const arr = [7, 6, 5, 4, 1, 2, 5, 8, 9, 2, 7, 4, 5];
 
+for (let i = 0; i < arr.length - 1; i++) {
+  const curentN = arr[i];
+  const nextN = arr[i + 1];
+  const sum = curentN + nextN;
 
-
-
-
-
-
-
-
-
-
-
-
+  console.log(`Сумма ${curentN} и ${nextN} равна ${sum}`);
+}
