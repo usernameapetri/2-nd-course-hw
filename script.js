@@ -552,7 +552,7 @@ console.log(arr);
 */
 
 //Задание 10
-
+/*
 const arr = [7, 6, 5, 4, 1, 2, 5, 8, 9, 2, 7, 4, 5];
 
 for (let i = 0; i < arr.length - 1; i++) {
@@ -562,3 +562,17 @@ for (let i = 0; i < arr.length - 1; i++) {
 
   console.log(`Сумма ${curentN} и ${nextN} равна ${sum}`);
 }
+*/
+
+//Задание 11
+
+const squareArray = (innerArray) => {
+  const squaredNumbers = innerArray.map((num) => num ** 2);
+  return squaredNumbers;
+};
+
+const arr = [2, 3, 4, 5, 6, 8, 8];
+
+const newArr = squareArray(arr);
+
+console.log(newArr);
