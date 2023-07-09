@@ -565,7 +565,7 @@ for (let i = 0; i < arr.length - 1; i++) {
 */
 
 //Задание 11
-
+/*
 const squareArray = (innerArray) => {
   const squaredNumbers = innerArray.map((num) => num ** 2);
   return squaredNumbers;
@@ -576,3 +576,17 @@ const arr = [2, 3, 4, 5, 6, 8, 8];
 const newArr = squareArray(arr);
 
 console.log(newArr);
+*/
+
+//Задание 12
+/*
+const array = ["skypro", "java script", "security", "application"];
+
+const newAray = [];
+
+for (let i = 0; i < array.length; i++) {
+  newAray.push(array[i].length);
+}
+
+console.log(newAray);
+*/
