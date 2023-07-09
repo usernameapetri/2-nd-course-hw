@@ -590,3 +590,15 @@ for (let i = 0; i < array.length; i++) {
 
 console.log(newAray);
 */
+//Задание 13
+/*
+const array = [-25, 25, 0, -1000, -2];
+
+function filterPositive(array) {
+  const filtred = array.filter((array) => array < 0);
+  console.log(filtred);
+}
+
+filterPositive([-1, 0, 5, -10, 56]);
+filterPositive([-25, 25, 0, -1000, -2]);
+*/
