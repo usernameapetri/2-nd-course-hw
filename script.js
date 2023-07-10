@@ -348,9 +348,8 @@ const sumOfNum = (a, b) => {
   }
 };
 
-console.log(sumOfNum(8, 9));
+console.log(sumOfNum());
 */
-
 // Задание 6
 /*
 const giveCubNum = (a) => {
@@ -373,7 +372,7 @@ const getCircleArea = function () {
 
 const getCirclePerimeter = function () {
   const perimeter = 2 * Math.PI * this.radius;
-  return perimeter;
+  return perimeter.toFixed(2);
 };
 const circle1 = {
   radius: 6,
@@ -393,7 +392,6 @@ console.log("Периметр circle1:", circle1.getPerimeter());
 console.log("Площадь circle2:", circle2.getArea());
 console.log("Периметр circle2:", circle2.getPerimeter());
 */
-
 //Задание 8
 
 //Решение 1
@@ -455,10 +453,152 @@ const gameSeasons = () => {
     alert("Вы ввели не правельный номер месяца ");
   }
 };
+*/
 
-console.log(getSeason(4));
-console.log(getSeason(7));
-console.log(getSeason(10));
-console.log(getSeason(13));
+//hw6
 
+//Задание 1
+/*
+const arr = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+  if (arr[i] == 10) break;
+}
+*/
+//Задание 2
+/*
+const arr = [1, 5, 4, 10, 0, 3];
+const findIndex = arr.indexOf(4);
+console.log(findIndex);
+*/
+//Задание 3
+/*
+const arr = [1, 3, 5, 10, 20];
+const joinArr = arr.join(" ");
+console.log(joinArr);
+*/
+//Задание 4
+/*
+const multiArray = [];
+
+for (let i = 0; i < 3; i++) {
+  const innerArray = [];
+
+  for (let j = 0; j < 3; j++) {
+    innerArray.push(1);
+  }
+
+  multiArray.push(innerArray);
+}
+
+console.log(multiArray);
+*/
+
+//Задание 5
+/*
+const arr = [1, 1, 1];
+arr.push(2, 2, 2);
+console.log(arr);
+*/
+
+//Задание 6
+/*
+const arr = [9, 8, 7, "a", 6, 5];
+
+arr.sort();
+
+arr.pop();
+
+console.log(arr);
+*/
+
+//Задание 7
+/*
+let arr = [9, 8, 7, 6, 5];
+
+let n = Number(prompt("Введите число"));
+
+if (arr.includes(n)) {
+  alert("Вы угадали");
+} else {
+  alert("Вы не угадали");
+}
+*/
+
+//Задание 8
+/*
+let string = "abcdef";
+
+let arr = string.split("");
+
+arr.reverse();
+
+arr = arr.join("");
+
+console.log(arr);
+*/
+
+//Задание 9
+/*
+const bigArr = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+
+const arr = bigArr.flat();
+
+console.log(arr);
+*/
+
+//Задание 10
+/*
+const arr = [7, 6, 5, 4, 1, 2, 5, 8, 9, 2, 7, 4, 5];
+
+for (let i = 0; i < arr.length - 1; i++) {
+  const curentN = arr[i];
+  const nextN = arr[i + 1];
+  const sum = curentN + nextN;
+
+  console.log(`Сумма ${curentN} и ${nextN} равна ${sum}`);
+}
+*/
+
+//Задание 11
+/*
+const squareArray = (innerArray) => {
+  const squaredNumbers = innerArray.map((num) => num ** 2);
+  return squaredNumbers;
+};
+
+const arr = [2, 3, 4, 5, 6, 8, 8];
+
+const newArr = squareArray(arr);
+
+console.log(newArr);
+*/
+
+//Задание 12
+/*
+const array = ["skypro", "java script", "security", "application"];
+
+const newAray = [];
+
+for (let i = 0; i < array.length; i++) {
+  newAray.push(array[i].length);
+}
+
+console.log(newAray);
+*/
+//Задание 13
+/*
+const array = [-25, 25, 0, -1000, -2];
+
+function filterPositive(array) {
+  const filtred = array.filter((array) => array < 0);
+  console.log(filtred);
+}
+
+filterPositive([-1, 0, 5, -10, 56]);
+filterPositive([-25, 25, 0, -1000, -2]);
 */
