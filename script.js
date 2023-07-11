@@ -700,3 +700,12 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // };
 
 // console.log(getNum(15));
+
+// // Задание 7
+// const getNum = (a, b) => {
+//   const min = Math.min(a, b);
+//   const max = Math.max(a, b);
+//   const randomNumber = Math.round(Math.random() * (max - min)) + min;
+//   return randomNumber;
+// };
+// console.log(getNum(1, 3));
