@@ -674,5 +674,14 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // Задание 4
 
-console.log(Math.max(52, 53, 49, 77, 21, 32));
-console.log(Math.min(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
+// console.log(Math.min(52, 53, 49, 77, 21, 32));
+
+// Задание 5
+
+// const getRandomNum = () => {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNumber);
+// };
+
+// getRandomNum();
