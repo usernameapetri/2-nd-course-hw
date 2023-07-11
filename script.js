@@ -709,3 +709,7 @@ filterPositive([-25, 25, 0, -1000, -2]);
 //   return randomNumber;
 // };
 // console.log(getNum(1, 3));
+
+// Задание 8
+
+// console.log(new Date());
