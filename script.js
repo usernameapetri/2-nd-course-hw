@@ -685,3 +685,18 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // };
 
 // getRandomNum();
+
+// Задание 6
+
+// const getNum = (num) => {
+//   const arr = [];
+//   const arrLeght = Math.floor(num / 2);
+
+//   for (let i = 0; i < arrLeght; i++) {
+//     const randomNumber = Math.round(Math.random() * (num + 1));
+//     arr.push(randomNumber);
+//   }
+//   return arr;
+// };
+
+// console.log(getNum(15));
