@@ -665,3 +665,9 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // console.log(arr);
 // console.log(findArrStr(arr, "ко"));
+
+// Задание 3
+
+// console.log(Math.floor(32.58884));
+// console.log(Math.ceil(32.58884));
+// console.log(Math.round(32.58884));
