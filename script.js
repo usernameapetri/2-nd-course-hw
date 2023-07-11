@@ -671,3 +671,8 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // console.log(Math.floor(32.58884));
 // console.log(Math.ceil(32.58884));
 // console.log(Math.round(32.58884));
+
+// Задание 4
+
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+console.log(Math.min(52, 53, 49, 77, 21, 32));
