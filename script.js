@@ -602,3 +602,40 @@ function filterPositive(array) {
 filterPositive([-1, 0, 5, -10, 56]);
 filterPositive([-25, 25, 0, -1000, -2]);
 */
+
+//Задание 14
+
+// const createAndfilter = () => {
+//   const array = [];
+//   const arrsort = [];
+//   for (let i = 0; i < 10; i++) {
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     array.push(randomNumber);
+//     if (randomNumber % 2 == 0) {
+//       arrsort.push(randomNumber);
+//     }
+//   }
+//   return console.log(array), console.log(arrsort);
+// };
+
+// createAndfilter();
+
+// Задание 15
+
+// const getArigmeticalArr = () => {
+//   const arr = [];
+//   for (let i = 0; i < 6; i++) {
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     arr.push(randomNumber);
+//   }
+//   let result = 0;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     result = arr[i] + arr[i + 1];
+//   }
+//   result /= arr.length;
+//   return console.log(
+//     `Дан рандомный массив [${arr}] его среднее арифметическое значение равно ${result}`
+//   );
+// };
+
+// getArigmeticalArr();
