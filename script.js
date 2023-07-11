@@ -622,20 +622,27 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // Задание 15
 
-// const getArigmeticalArr = () => {
+// const getArithmeticArr = () => {
 //   const arr = [];
 //   for (let i = 0; i < 6; i++) {
 //     const randomNumber = Math.floor(Math.random() * 10) + 1;
 //     arr.push(randomNumber);
 //   }
-//   let result = 0;
-//   for (let i = 0; i < arr.length - 1; i++) {
-//     result = arr[i] + arr[i + 1];
-//   }
+//   let result = arr.reduce(function (a, b) {
+//     return a + b;
+//   });
 //   result /= arr.length;
 //   return console.log(
-//     `Дан рандомный массив [${arr}] его среднее арифметическое значение равно ${result}`
+//     `Дан рандомный массив [${arr}] его среднее арифметическое значение равно ${result.toFixed(
+//       2
+//     )}`
 //   );
 // };
+// getArithmeticArr();
 
-// getArigmeticalArr();
+// hw7
+
+// Задание 1
+
+// let str = "skypro";
+// console.log(str.toUpperCase());
