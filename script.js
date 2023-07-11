@@ -646,3 +646,22 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // let str = "skypro";
 // console.log(str.toUpperCase());
+
+// Задание 2
+
+// const arr = ["Кошка", "Кит", "Комар", "Носорог"];
+
+// const findArrStr = (arr, str) => {
+//   const arrSearch = [];
+
+//   arr.forEach((item) => {
+//     if (item.toLowerCase().startsWith(str.toLowerCase())) {
+//       arrSearch.push(item);
+//     }
+//   });
+
+//   return arrSearch;
+// };
+
+// console.log(arr);
+// console.log(findArrStr(arr, "ко"));
