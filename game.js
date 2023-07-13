@@ -11,3 +11,38 @@ const getSeason = (monthNumber) => {
     alert("Неправильный номер месяца");
   }
 };
+
+const gameWords = () => {
+  let arr = [
+    "Яблоко",
+    "Груша",
+    "Дыня",
+    "Виноград",
+    "Персик",
+    "Апельсин",
+    "Мандарин",
+  ];
+  arr = arr.sort(() => Math.random() - 0.5);
+  alert(arr);
+  const arrElementFirst = arr.shift();
+  const arrElementLast = arr.pop();
+
+  const answerElementFirst = prompt("Чему равнялся первый элемент массива?");
+  const answerElementLast = prompt("Чему равнялся последний элемент массива?");
+
+  if (
+    arrElementFirst.toLowerCase() === answerElementFirst.toLowerCase() &&
+    arrElementLast.toLowerCase() === answerElementLast.toLowerCase()
+  ) {
+    alert("🏆Поздравляю вы угадали оба элемента🏆");
+  } else if (
+    arrElementFirst.toLowerCase() === answerElementFirst.toLowerCase() ||
+    arrElementLast.toLowerCase() === answerElementLast.toLowerCase()
+  ) {
+    alert("Вы были близки к победе!🗿");
+  } else {
+    alert("Ответы не верны, попробуйте снова😿");
+  }
+  console.log(arrElementFirst);
+  console.log(arrElementLast);
+};
