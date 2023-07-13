@@ -261,6 +261,24 @@ button {
   grid-area: 1 / 1 / 2 / 7;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+  height: 80px;
+  background: #000915;
+}
+
+.footer__text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (max-width: 376px) {
   .center {
     padding-left: 16px;

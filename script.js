@@ -713,3 +713,15 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // Задание 8
 
 // console.log(new Date());
+
+// Задание 9
+
+// let currentDate = new Date();
+// let newDate = new Date();
+
+// newDate.setDate(currentDate.getDate() + 73);
+
+// console.log(currentDate);
+// console.log(newDate);
+
+
