@@ -726,6 +726,52 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // Задание 10
 
+const formatDate = (date) => {
+  const months = [
+    "января",
+    "февраля",
+    "марта",
+    "апреля",
+    "мая",
+    "июня",
+    "июля",
+    "августа",
+    "сентября",
+    "октября",
+    "ноября",
+    "декабря",
+  ];
+  const daysOfWeek = [
+    "воскресенье",
+    "понедельник",
+    "вторник",
+    "среда",
+    "четверг",
+    "пятница",
+    "суббота",
+  ];
+
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+  const dayOfWeek = date.getDay();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  const formattedDate = `Дата: ${day} ${months[month]} ${year} - это ${daysOfWeek[dayOfWeek]}.`;
+  const formattedTime = `Время: ${hours}:${minutes}:${String(seconds).padStart(
+    2,
+    "0"
+  )}`;
+
+  return `${formattedDate} \n ${formattedTime}`;
+};
+
+const myDate = new Date();
+const formattedDateTime = formatDate(myDate);
+console.log(formattedDateTime);
+
 //Задание 11
 
 // const gameWords = () => {
