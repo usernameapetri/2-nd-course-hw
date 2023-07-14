@@ -602,3 +602,211 @@ function filterPositive(array) {
 filterPositive([-1, 0, 5, -10, 56]);
 filterPositive([-25, 25, 0, -1000, -2]);
 */
+
+//Задание 14
+
+// const createAndfilter = () => {
+//   const array = [];
+//   const arrsort = [];
+//   for (let i = 0; i < 10; i++) {
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     array.push(randomNumber);
+//     if (randomNumber % 2 == 0) {
+//       arrsort.push(randomNumber);
+//     }
+//   }
+//   return console.log(array), console.log(arrsort);
+// };
+
+// createAndfilter();
+
+// Задание 15
+
+// const getArithmeticArr = () => {
+//   const arr = [];
+//   for (let i = 0; i < 6; i++) {
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     arr.push(randomNumber);
+//   }
+//   let result = arr.reduce(function (a, b) {
+//     return a + b;
+//   });
+//   result /= arr.length;
+//   return console.log(
+//     `Дан рандомный массив [${arr}] его среднее арифметическое значение равно ${result.toFixed(
+//       2
+//     )}`
+//   );
+// };
+// getArithmeticArr();
+
+// hw7
+
+// Задание 1
+
+// let str = "skypro";
+// console.log(str.toUpperCase());
+
+// Задание 2
+
+// const arr = ["Кошка", "Кит", "Комар", "Носорог"];
+
+// const findArrStr = (arr, str) => {
+//   const arrSearch = [];
+
+//   arr.forEach((item) => {
+//     if (item.toLowerCase().startsWith(str.toLowerCase())) {
+//       arrSearch.push(item);
+//     }
+//   });
+
+//   return arrSearch;
+// };
+
+// console.log(arr);
+// console.log(findArrStr(arr, "ко"));
+
+// Задание 3
+
+// console.log(Math.floor(32.58884));
+// console.log(Math.ceil(32.58884));
+// console.log(Math.round(32.58884));
+
+// Задание 4
+
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
+// console.log(Math.min(52, 53, 49, 77, 21, 32));
+
+// Задание 5
+
+// const getRandomNum = () => {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNumber);
+// };
+
+// getRandomNum();
+
+// Задание 6
+
+// const getNum = (num) => {
+//   const arr = [];
+//   const arrLeght = Math.floor(num / 2);
+
+//   for (let i = 0; i < arrLeght; i++) {
+//     const randomNumber = Math.round(Math.random() * (num + 1));
+//     arr.push(randomNumber);
+//   }
+//   return arr;
+// };
+
+// console.log(getNum(15));
+
+// // Задание 7
+// const getNum = (a, b) => {
+//   const min = Math.min(a, b);
+//   const max = Math.max(a, b);
+//   const randomNumber = Math.round(Math.random() * (max - min)) + min;
+//   return randomNumber;
+// };
+// console.log(getNum(1, 3));
+
+// Задание 8
+
+// console.log(new Date());
+
+// Задание 9
+
+// let currentDate = new Date();
+// let newDate = new Date();
+
+// newDate.setDate(currentDate.getDate() + 73);
+
+// console.log(currentDate);
+// console.log(newDate);
+
+// Задание 10
+
+const formatDate = (date) => {
+  const months = [
+    "января",
+    "февраля",
+    "марта",
+    "апреля",
+    "мая",
+    "июня",
+    "июля",
+    "августа",
+    "сентября",
+    "октября",
+    "ноября",
+    "декабря",
+  ];
+  const daysOfWeek = [
+    "воскресенье",
+    "понедельник",
+    "вторник",
+    "среда",
+    "четверг",
+    "пятница",
+    "суббота",
+  ];
+
+  const day = date.getDate();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+  const dayOfWeek = date.getDay();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+
+  const formattedDate = `Дата: ${day} ${months[month]} ${year} - это ${daysOfWeek[dayOfWeek]}.`;
+  const formattedTime = `Время: ${hours}:${minutes}:${String(seconds).padStart(
+    2,
+    "0"
+  )}`;
+
+  return `${formattedDate} \n ${formattedTime}`;
+};
+
+const myDate = new Date();
+const formattedDateTime = formatDate(myDate);
+console.log(formattedDateTime);
+
+//Задание 11
+
+// const gameWords = () => {
+//   let arr = [
+//     "Яблоко",
+//     "Груша",
+//     "Дыня",
+//     "Виноград",
+//     "Персик",
+//     "Апельсин",
+//     "Мандарин",
+//   ];
+//   arr = arr.sort(() => Math.random() - 0.5);
+//   alert(arr);
+//   const arrElementFirst = arr.shift();
+//   const arrElementLast = arr.pop();
+
+//   const answerElementFirst = prompt("Чему равнялся первый элемент массива?");
+//   const answerElementLast = prompt("Чему равнялся последний элемент массива?");
+
+//   if (
+//     arrElementFirst.toLowerCase() === answerElementFirst.toLowerCase() &&
+//     arrElementLast.toLowerCase() === answerElementLast.toLowerCase()
+//   ) {
+//     alert("🏆Поздравляю вы угадали оба элемента🏆");
+//   } else if (
+//     arrElementFirst.toLowerCase() === answerElementFirst.toLowerCase() ||
+//     arrElementLast.toLowerCase() === answerElementLast.toLowerCase()
+//   ) {
+//     alert("Вы были близки к победе!🗿");
+//   } else {
+//     alert("Ответы не верны, попробуйте снова😿");
+//   }
+//   console.log(arrElementFirst);
+//   console.log(arrElementLast);
+// };
+
+// gameWords();
