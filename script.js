@@ -889,3 +889,23 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // delayForSecond(function () {
 //   console.log("Привет, Глеб!");
 // });
+
+// Задание 5
+
+// function delayForSecond(cb) {
+//   setTimeout(() => {
+//     console.log("Прошла одна секунда");
+//     if (cb) {
+//       cb();
+//     }
+//   }, 1000);
+// }
+
+// function sayHi(name) {
+//   console.log(`Привет, ${name}!`);
+// }
+// // Код выше менять нельзя
+
+// // Нужно изменить код ниже:
+
+// delayForSecond(() => sayHi("Глеб"));
