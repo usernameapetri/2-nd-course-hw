@@ -878,3 +878,14 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // };
 
 // getTime();
+
+// Задание 4
+
+// function delayForSecond(callback) {
+//   setTimeout(callback, 1000);
+//   callback();
+// }
+
+// delayForSecond(function () {
+//   console.log("Привет, Глеб!");
+// });
