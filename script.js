@@ -832,4 +832,32 @@ filterPositive([-25, 25, 0, -1000, -2]);
 //  { name: 'Оксана', age: 47 }
 // ]
 
+// Задание 2
+function filter(array, ruleFunction) {
+  return array
+    .map((element) => {
+      if (ruleFunction(element)) {
+        return element;
+      }
+    })
+    .filter(Boolean);
+}
 
+function isPositive(number) {
+  return number > 0;
+}
+
+function isMale(person) {
+  return person.gender === "male";
+}
+
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+const people = [
+  { name: "Глеб", gender: "male" },
+  { name: "Анна", gender: "female" },
+  { name: "Олег", gender: "male" },
+  { name: "Оксана", gender: "female" },
+];
+
+console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
