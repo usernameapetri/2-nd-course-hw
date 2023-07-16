@@ -821,7 +821,6 @@ filterPositive([-25, 25, 0, -1000, -2]);
 //   { name: "Оксана", age: 47 },
 // ];
 
-// // Допишите колбэк для sort, изучите, как работает колбэк, в документации
 // people.sort((a, b) => a.age - b.age);
 // console.log(people);
 // код выше должен вывеcти =>
@@ -833,31 +832,49 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // ]
 
 // Задание 2
-function filter(array, ruleFunction) {
-  return array
-    .map((element) => {
-      if (ruleFunction(element)) {
-        return element;
-      }
-    })
-    .filter(Boolean);
-}
+// function filter(array, ruleFunction) {
+//   return array
+//     .map((element) => {
+//       if (ruleFunction(element)) {
+//         return element;
+//       }
+//     })
+//     .filter(Boolean);
+// }
 
-function isPositive(number) {
-  return number > 0;
-}
+// function isPositive(number) {
+//   return number > 0;
+// }
 
-function isMale(person) {
-  return person.gender === "male";
-}
+// function isMale(person) {
+//   return person.gender === "male";
+// }
 
-console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-const people = [
-  { name: "Глеб", gender: "male" },
-  { name: "Анна", gender: "female" },
-  { name: "Олег", gender: "male" },
-  { name: "Оксана", gender: "female" },
-];
+// const people = [
+//   { name: "Глеб", gender: "male" },
+//   { name: "Анна", gender: "female" },
+//   { name: "Олег", gender: "male" },
+//   { name: "Оксана", gender: "female" },
+// ];
 
-console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+// console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+// Задание 3
+
+// const getTime = () => {
+//   let counter = 0;
+//   const interval = setInterval(() => {
+//     const currentDate = new Date();
+//     console.log(currentDate);
+
+//     counter += 3;
+//     if (counter >= 30) {
+//       clearInterval(interval);
+//       console.log("30 секунд прошло");
+//     }
+//   }, 3000);
+// };
+
+// getTime();
