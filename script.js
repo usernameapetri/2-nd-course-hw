@@ -833,13 +833,14 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // Задание 2
 // function filter(array, ruleFunction) {
-//   return array
-//     .map((element) => {
-//       if (ruleFunction(element)) {
-//         return element;
-//       }
-//     })
-//     .filter(Boolean);
+//   let result = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (ruleFunction(array[i])) {
+//       result.push(array[i]);
+//     }
+//   }
+//   return result;
 // }
 
 // function isPositive(number) {
@@ -883,7 +884,6 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // function delayForSecond(callback) {
 //   setTimeout(callback, 1000);
-//   callback();
 // }
 
 // delayForSecond(function () {
@@ -909,3 +909,17 @@ filterPositive([-25, 25, 0, -1000, -2]);
 // // Нужно изменить код ниже:
 
 // delayForSecond(() => sayHi("Глеб"));
+
+// const greet = () => "hello world!";
+
+// console.log(greet());
+
+// var summation = function (num) {
+//   let sum = 0;
+//   for (let i = 1; i < num + 1; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+
+// console.log(summation(2));
