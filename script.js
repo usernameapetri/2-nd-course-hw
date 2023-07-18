@@ -726,51 +726,51 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // Задание 10
 
-const formatDate = (date) => {
-  const months = [
-    "января",
-    "февраля",
-    "марта",
-    "апреля",
-    "мая",
-    "июня",
-    "июля",
-    "августа",
-    "сентября",
-    "октября",
-    "ноября",
-    "декабря",
-  ];
-  const daysOfWeek = [
-    "воскресенье",
-    "понедельник",
-    "вторник",
-    "среда",
-    "четверг",
-    "пятница",
-    "суббота",
-  ];
+// const formatDate = (date) => {
+//   const months = [
+//     "января",
+//     "февраля",
+//     "марта",
+//     "апреля",
+//     "мая",
+//     "июня",
+//     "июля",
+//     "августа",
+//     "сентября",
+//     "октября",
+//     "ноября",
+//     "декабря",
+//   ];
+//   const daysOfWeek = [
+//     "воскресенье",
+//     "понедельник",
+//     "вторник",
+//     "среда",
+//     "четверг",
+//     "пятница",
+//     "суббота",
+//   ];
 
-  const day = date.getDate();
-  const month = date.getMonth();
-  const year = date.getFullYear();
-  const dayOfWeek = date.getDay();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
+//   const day = date.getDate();
+//   const month = date.getMonth();
+//   const year = date.getFullYear();
+//   const dayOfWeek = date.getDay();
+//   const hours = date.getHours();
+//   const minutes = date.getMinutes();
+//   const seconds = date.getSeconds();
 
-  const formattedDate = `Дата: ${day} ${months[month]} ${year} - это ${daysOfWeek[dayOfWeek]}.`;
-  const formattedTime = `Время: ${hours}:${minutes}:${String(seconds).padStart(
-    2,
-    "0"
-  )}`;
+//   const formattedDate = `Дата: ${day} ${months[month]} ${year} - это ${daysOfWeek[dayOfWeek]}.`;
+//   const formattedTime = `Время: ${hours}:${minutes}:${String(seconds).padStart(
+//     2,
+//     "0"
+//   )}`;
 
-  return `${formattedDate} \n ${formattedTime}`;
-};
+//   return `${formattedDate} \n ${formattedTime}`;
+// };
 
-const myDate = new Date();
-const formattedDateTime = formatDate(myDate);
-console.log(formattedDateTime);
+// const myDate = new Date();
+// const formattedDateTime = formatDate(myDate);
+// console.log(formattedDateTime);
 
 //Задание 11
 
@@ -805,8 +805,121 @@ console.log(formattedDateTime);
 //   } else {
 //     alert("Ответы не верны, попробуйте снова😿");
 //   }
-//   console.log(arrElementFirst);
-//   console.log(arrElementLast);
+
 // };
 
 // gameWords();
+
+// hw 8
+
+// Задание 1
+
+// const people = [
+//   { name: "Глеб", age: 29 },
+//   { name: "Анна", age: 17 },
+//   { name: "Олег", age: 7 },
+//   { name: "Оксана", age: 47 },
+// ];
+
+// people.sort((a, b) => a.age - b.age);
+// console.log(people);
+// код выше должен вывеcти =>
+// [
+//  { name: 'Олег', age: 7 },
+//  { name: 'Анна', age: 17 },
+//  { name: 'Глеб', age: 29 },
+//  { name: 'Оксана', age: 47 }
+// ]
+
+// Задание 2
+// function filter(array, ruleFunction) {
+//   let result = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     if (ruleFunction(array[i])) {
+//       result.push(array[i]);
+//     }
+//   }
+//   return result;
+// }
+
+// function isPositive(number) {
+//   return number > 0;
+// }
+
+// function isMale(person) {
+//   return person.gender === "male";
+// }
+
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+// const people = [
+//   { name: "Глеб", gender: "male" },
+//   { name: "Анна", gender: "female" },
+//   { name: "Олег", gender: "male" },
+//   { name: "Оксана", gender: "female" },
+// ];
+
+// console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+// Задание 3
+
+// const getTime = () => {
+//   let counter = 0;
+//   const interval = setInterval(() => {
+//     const currentDate = new Date();
+//     console.log(currentDate);
+
+//     counter += 3;
+//     if (counter >= 30) {
+//       clearInterval(interval);
+//       console.log("30 секунд прошло");
+//     }
+//   }, 3000);
+// };
+
+// getTime();
+
+// Задание 4
+
+// function delayForSecond(callback) {
+//   setTimeout(callback, 1000);
+// }
+
+// delayForSecond(function () {
+//   console.log("Привет, Глеб!");
+// });
+
+// Задание 5
+
+// function delayForSecond(cb) {
+//   setTimeout(() => {
+//     console.log("Прошла одна секунда");
+//     if (cb) {
+//       cb();
+//     }
+//   }, 1000);
+// }
+
+// function sayHi(name) {
+//   console.log(`Привет, ${name}!`);
+// }
+// // Код выше менять нельзя
+
+// // Нужно изменить код ниже:
+
+// delayForSecond(() => sayHi("Глеб"));
+
+// const greet = () => "hello world!";
+
+// console.log(greet());
+
+// var summation = function (num) {
+//   let sum = 0;
+//   for (let i = 1; i < num + 1; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+
+// console.log(summation(2));

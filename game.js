@@ -1,5 +1,5 @@
 const getSeason = (monthNumber) => {
-  if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+  if (monthNumber == 12 || monthNumber == 1 || monthNumber == 2) {
     alert("Зима");
   } else if (monthNumber >= 3 && monthNumber <= 5) {
     alert("Весна");
