@@ -914,12 +914,103 @@ filterPositive([-25, 25, 0, -1000, -2]);
 
 // console.log(greet());
 
-// var summation = function (num) {
-//   let sum = 0;
-//   for (let i = 1; i < num + 1; i++) {
-//     sum += i;
+// const invert = (arr) => arr.map((num) => (typeof num === "number" ? -num : num));
+
+// console.log(invert([1, 2, 3, 4, 5, -5]));
+
+// const invert = (arr) => arr.map((num) => (num === -0 ? 0 : num));
+
+// console.log(invert([1, 2, 3, 4, -5, -2]));
+
+// const addLegth = (str) => str.split(" ");
+
+// console.log(addLegth("apple ban"));
+
+// const srtCount = (str, letter) => {
+//   let bober = str.split("");
+//   let numberOfLetter = 0;
+//   for (let i = 0; bober.length > i; i++) {
+//     if (bober[i] == letter) {
+//       numberOfLetter++;
+//     }
 //   }
-//   return sum;
+//   return `${str} ${numberOfLetter}`;
 // };
 
-// console.log(summation(2));
+// console.log(srtCount("", "o"));
+
+// const strCount = (str, letter) => str.split("").reduce((n, m) => n + (m === letter), 0);
+
+// console.log(strCount("Hello", "z"));
+
+// function nearestSq(n) {
+//   const squareRoot = Math.sqrt(n);
+//   const nearestInteger = Math.round(squareRoot);
+//   return nearestInteger * nearestInteger;
+// }
+
+// const nearestSq = (n) => Math.sqrt(n);
+
+// const addLegth = (str) => str.split(" ").map((item) => item + item.length);
+// console.log(addLegth("apple ben"));
+
+// function nearestSq(n){
+//   const squareRoot = Math.sqrt(n);
+//   const nearestInteger = Math.round(squareRoot);
+//   return nearestInteger * nearestInteger;
+// }
+
+// const nearestSq = (n) => Math.round(Math.sqrt(n)) ** 2;
+
+// console.log(nearestSq(10));
+
+// const solution = (str) => str.split("").reverse().join("");
+
+// console.log(solution("bober"));
+
+// const mango = (q, p) => (q % 3 === 0 ? q * p - 3 : q * p - 1);
+
+// console.log(mango(9, 5));
+
+// function mango(q, p) {
+//   let freeMango = Math.floor(q / 3);
+//   let mangoforfree = freeMango * p;
+//   let price = q * p;
+//   let finalprice = price - mangoforfree;
+//   return finalprice;
+// }
+
+// console.log(mango(3, 3));
+
+// function mango(quantity, pricePerMango) {
+//   const freeMangoes = Math.floor(quantity / 3);
+//   const cost = (quantity - freeMangoes) * pricePerMango;
+//   return cost;
+// }
+
+// console.log(mango(100, 54));
+
+// const litres = (t) => Math.floor(t * 0.5);
+
+// console.log(litres(6.7));
+
+// const invert = (a) => a.map((n) => (n === n ? -n : n));
+
+// console.log(invert([1, 2, 4, 5, 6, -1, -6]));
+
+// const grow = (x) => x.reduce((a, c) => a * c);
+
+// console.log(grow([4, 1, 1, 1, 4]));
+
+// const powersOfTwo = (n) => {
+//   const arr = [];
+//   if (n >= 0) {
+//     for (let i = 0; n >= i; i++) {
+//       arr.push(i);
+//     }
+//     const result = arr.map((n) => 2 ** n);
+//     return result;
+//   }
+// };
+
+// console.log(powersOfTwo(1));
